@@ -46,14 +46,16 @@ const Model = forwardRef((props, ref) => {
       x: position.x,
       y: position.y,
       z: position.z,
-     
+      duration: 2,
+      ease: "power2.out",
     });
 
     gsap.to(ref.current.rotation, {
       x: rotation.x,
       y: rotation.y,
       z: rotation.z,
-     
+      duration: 2,
+      ease: "power2.out",
     });
   }, [props.state,ref]); // Triggers only on new position/rotation
 
