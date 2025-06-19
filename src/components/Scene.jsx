@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { Canvas } from "@react-three/fiber";
@@ -31,5 +30,7 @@ const Scene = forwardRef((props, ref) => {
     </Canvas>
   );
 });
+
+Scene.displayName = "Scene";
 
 export default Scene;
